@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "lint": "eslint src/**",
+    "format": "prettier --write .",
+    "lint:format": "prettier --check ."
   },
   "keywords": [],
   "author": "",
@@ -22,8 +25,15 @@
     "@storybook/addon-links": "^6.3.2",
     "@storybook/react": "^6.3.2",
     "@types/react": "^17.0.13",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
     "babel-loader": "^8.2.2",
     "bootstrap": "^5.0.2",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1",
     "typescript": "4.3.5"
   }
 }
