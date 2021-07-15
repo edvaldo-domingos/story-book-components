@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { StyledButton } from './styles';
 export interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
@@ -23,6 +24,12 @@ export const Button = React.forwardRef<
     </StyledButton>
   );
 });
+
+Button.propTypes = {
+  variant: PropTypes.oneOf(['secondary', 'primary', 'danger']),
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  isFullWidth: PropTypes.bool,
+};
 
 Button.defaultProps = {
   variant: 'secondary',
