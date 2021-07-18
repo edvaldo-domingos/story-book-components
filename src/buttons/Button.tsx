@@ -36,3 +36,5 @@ Button.defaultProps = {
   size: 'medium',
   isFullWidth: false,
 };
+
+Button.displayName = 'Button';
