@@ -32,7 +32,7 @@ var colorStyles = function colorStyles(p) {
 
 var StyledButton = styled.button.withConfig({
   displayName: "styles__StyledButton",
-  componentId: "sc-1s7qdnz-0"
+  componentId: "sc-m3kk1m-0"
 })(["cursor:pointer;font-weight:400;text-align:center;vertical-align:middle;user-select:none;border:1px solid transparent;line-height:1.5;border-radius:0;transition:all 0.15s ease-in-out;display:", ";width:", ";padding:", ";font-size:", ";&:focus{outline:0;}&:disabled{cursor:inherit;opacity:", ";}", ""], function (p) {
   return p.isFullWidth ? 'block' : 'inline-block';
 }, function (p) {
@@ -81,6 +81,7 @@ Button.defaultProps = {
   size: 'medium',
   isFullWidth: false
 };
+Button.displayName = 'Button';
 
 var nanoid = customAlphabet('1234567890abcdef', 10);
 var useUniqueID = function useUniqueID() {
@@ -95,17 +96,17 @@ var FieldContext = /*#__PURE__*/createContext(undefined);
 
 var StyledLabel = styled.label.withConfig({
   displayName: "styles__StyledLabel",
-  componentId: "sc-8awnhv-0"
+  componentId: "sc-kqq05e-0"
 })(["font-weight:500;margin-bottom:0.4rem;"]);
 var StyledInput = styled.input.withConfig({
   displayName: "styles__StyledInput",
-  componentId: "sc-8awnhv-1"
+  componentId: "sc-kqq05e-1"
 })(["display:block;width:100%;padding:0.5rem 0.4rem;font-size:1rem;line-height:1.5;color:", ";background-color:transparent;border:1px solid ", ";appearance:none;border-radius:0;transition:all 0.15s ease-in-out;&:focus{outline:none;border-color:", ";box-shadow:0 0 0 0.2rem ", ";}&:disabled{background-color:", ";opacity:", ";}"], SECONDARY_TEXT_COLOR, SECONDARY_COLOR, PRIMARY_COLOR, transparentize(0.75, PRIMARY_COLOR), SECONDARY_COLOR, DISABLED_OPACITY);
 var StyledTextarea = styled(StyledInput).attrs({
   as: 'textarea'
 }).withConfig({
   displayName: "styles__StyledTextarea",
-  componentId: "sc-8awnhv-2"
+  componentId: "sc-kqq05e-2"
 })(["resize:", ";"], function (props) {
   return !props.isResizable && 'none';
 });

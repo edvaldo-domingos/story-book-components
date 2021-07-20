@@ -17,7 +17,7 @@
     "format": "prettier --write \"src/**/*\"",
     "build": "npm run build:js && npm run build:types",
     "build:types": "tsc -p tsconfig.build.json",
-    "release": "auto shipit --base-branch=main"
+    "release": "auto shipit --base-branch=master"
   },
   "module": "dist/index.esm.js",
   "sideEffects": false,
