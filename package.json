@@ -1,5 +1,6 @@
 {
   "name": "edvaldo-domingos",
+  "author": "edvaldo-domingos",
   "version": "1.8.0",
   "description": "",
   "main": "dist/index.cjs.js",
@@ -22,7 +23,6 @@
   "module": "dist/index.esm.js",
   "sideEffects": false,
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "peerDependencies": {
     "react": "^17.0.2",
