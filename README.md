@@ -1,3 +1,4 @@
-# Private component library
+# Components library
 
-This is our private component library.
+A set of components to be re-used in different projects.
+Built with TS ReactJs

@@ -36,11 +36,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           yarn install --frozen-lockfile
+          yarn lint
+          yarn test
           yarn build
           yarn release
-
-      #           - run: npm ci
-      # - run: npm run lint
-      # - run: npm run test
-      # - run: npm run build
-      # - run: npm publish --access public
